@@ -1,0 +1,41 @@
+﻿@page "/Register"
+@using Data
+@using System.Net.Http
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+<h3>Register</h3>
+
+<EditForm Model="@oUsuario">
+    <div class="container-fluid">
+        <div class="form-group row mb-1">
+            <label class="col-sm-3">Nombre</label>
+            <div class="col-sm-9">
+                <InputText class="form-control" @bind-Value="@oEnvioUser.Usuario"></InputText>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <label class="col-sm-3">Clave</label>
+            <div class="col-sm-9">
+                <InputText class="form-control" @bind-Value="@oEnvioUser.Clave"></InputText>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" @onclick="Save">Guardar</button>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    public string Url = "/parqueadero/Register";
+    DataEnvioUser oEnvioUser = new DataEnvioUser();
+    UsuarioData oUsuario = new UsuarioData();
+    private async Task Save()
+    {
+        var response = await Http.PostAsJsonAsync<DataEnvioUser>(Url, oEnvioUser);
+        oUsuario = response.Content.ReadFromJsonAsync<UsuarioData>().Result;
+        NavigationManager.NavigateTo("/Login");
+    }
+}

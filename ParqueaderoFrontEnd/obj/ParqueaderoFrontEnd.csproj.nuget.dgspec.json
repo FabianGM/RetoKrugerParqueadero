@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ChurosFabian\\Documents\\ProyectosC#\\GARRIDO_FABIAN_APP_PARQUEADERO\\ParqueaderoFrontEnd\\ParqueaderoFrontEnd.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ChurosFabian\\Documents\\ProyectosC#\\GARRIDO_FABIAN_APP_PARQUEADERO\\ParqueaderoFrontEnd\\ParqueaderoFrontEnd.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ChurosFabian\\Documents\\ProyectosC#\\GARRIDO_FABIAN_APP_PARQUEADERO\\ParqueaderoFrontEnd\\ParqueaderoFrontEnd.csproj",
+        "projectName": "ParqueaderoFrontEnd",
+        "projectPath": "C:\\Users\\ChurosFabian\\Documents\\ProyectosC#\\GARRIDO_FABIAN_APP_PARQUEADERO\\ParqueaderoFrontEnd\\ParqueaderoFrontEnd.csproj",
+        "packagesPath": "C:\\Users\\ChurosFabian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ChurosFabian\\Documents\\ProyectosC#\\GARRIDO_FABIAN_APP_PARQUEADERO\\ParqueaderoFrontEnd\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ChurosFabian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Catel.MVVM": {
+              "target": "Package",
+              "version": "[5.12.22, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.115.5, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

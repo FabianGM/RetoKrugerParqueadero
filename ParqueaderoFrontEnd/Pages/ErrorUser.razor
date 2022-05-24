@@ -1,0 +1,14 @@
+﻿@page "/ErrorUser" 
+@inject NavigationManager NavigationManager
+<h3>Lo siento su Usuario no Existe </h3>
+<div class="form-group row mb-1">
+    <div class="col-sm-12">
+        <button class="btn btn-primary" @onclick="LoginU">Presione para volver a intentar</button>
+    </div>
+</div>
+@code {
+    private async Task LoginU()
+    {
+        NavigationManager.NavigateTo("/Login");
+    }
+}

@@ -1,0 +1,176 @@
+﻿@page "/Datos"
+@using Data
+@using System.Net.Http
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject NavigationManager uriHelper;
+@using Newtonsoft.Json;
+@using System.Threading;
+<h3>Datos del Parqueadero</h3>
+
+<table class="table">
+    <tr>
+        <td>Placa</td>
+        <td>Transporte</td>
+        <td>Estado</td>
+        <td>Hora de Entrada</td>
+    </tr>
+    @foreach (var i in oDataObtener) {
+    <tr>
+        <td>@i.Placa</td>
+        <td>@i.Transporte</td>
+        <td>@i.Estado</td>
+        <td>@i.Hora:@i.Minutos</td>
+    </tr>
+    }
+    
+</table>
+@code {
+            public string UrlOT = "/parqueadero/DatosParqueaderoS";
+            public List<DatosConsultaTransporte> oDataObtener = new List<DatosConsultaTransporte>();
+            DatosConsultaTransporte oModData;
+            protected override async Task OnInitializedAsync()
+            {
+                var oDatosConsultaTransporte = await Http.GetFromJsonAsync<List<DatosConsultaTransporte>>(UrlOT);
+                foreach (var oElementC in oDatosConsultaTransporte)
+                {
+                    oModData = new DatosConsultaTransporte();
+                    oModData.Placa = oElementC.Placa;
+                    oModData.Transporte = oElementC.Transporte;
+                    oModData.Estado = oElementC.Estado;
+                    oModData.Hora = oElementC.Hora;
+                    oModData.Minutos = oElementC.Minutos;
+                    oDataObtener.Add(oModData);
+                }
+            }
+        }
+
+
+<h3>Ingreso Transportes</h3>
+<EditForm Model="@oTransporteI">
+    <div class="container-fluid">
+        <div class="form-group row mb-1">
+            <label class="col-sm-3">Placa</label>
+            <div class="col-sm-9">
+                <InputText class="form-control" @bind-Value="@oDataEnvioTransporteI.Placa"></InputText>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <label class="col-sm-3">Transporte</label>
+            <div class="col-sm-9">
+                <InputText class="form-control" @bind-Value="@oDataEnvioTransporteI.Transporte"></InputText>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <label class="col-sm-3">Estado</label>
+            <div class="col-sm-9">
+                <InputText class="form-control" @bind-Value="@oDataEnvioTransporteI.Estado"></InputText>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" @onclick="SaveI">Guardar</button>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    public string UrlI = "/parqueadero/IngresarTransporte";
+        DataEnvioTransporte oDataEnvioTransporteI = new DataEnvioTransporte();
+        TransporteData oTransporteI = new TransporteData();
+        private async Task SaveI()
+        {
+            var response = await Http.PostAsJsonAsync<DataEnvioTransporte>(UrlI, oDataEnvioTransporteI);
+            oTransporteI = response.Content.ReadFromJsonAsync<TransporteData>().Result;
+            NavigationManager.NavigateTo("/Datos");
+            Refresh();
+        }
+    }
+
+<h3>Actualizar Datos</h3>
+<EditForm Model="@oTransporte">
+    <div class="container-fluid">
+        <div class="form-group row mb-1">
+            <label class="col-sm-3">Placa</label>
+            <div class="col-sm-9">
+                <InputText class="form-control" @bind-Value="@oDataEnvioTransporte.Placa"></InputText>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <label class="col-sm-3">Estado</label>
+            <div class="col-sm-9">
+                <InputText class="form-control" @bind-Value="@oDataEnvioTransporte.Estado"></InputText>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" @onclick="SaveA">Actualizar</button>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    public string UrlA = "/parqueadero/UpdateParqueadero";
+    DataEnvioTransporte oDataEnvioTransporte = new DataEnvioTransporte();
+    TransporteData oTransporte = new TransporteData();
+    private async Task SaveA()
+    {
+        var response = await Http.PutAsJsonAsync<DataEnvioTransporte>(UrlA, oDataEnvioTransporte);
+        oTransporte = response.Content.ReadFromJsonAsync<TransporteData>().Result;
+        NavigationManager.NavigateTo("/Datos");
+        Refresh();
+    }
+
+    public void Refresh()
+    {
+        var timer = new Timer(new TimerCallback(_ =>
+        {
+            uriHelper.NavigateTo(uriHelper.Uri, forceLoad: true);
+        }), null, 1600, 1600);
+    }
+}
+
+<h3>Eliminar Transporte</h3>
+
+<EditForm Model="@oTransporteE">
+    <div class="container-fluid">
+        <div class="form-group row mb-1">
+            <label class="col-sm-3">Placa</label>
+            <div class="col-sm-9">
+                <InputText class="form-control" @bind-Value="@oDataEnvioTransporteE.Placa"></InputText>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" @onclick="BorrarE">Borrar</button>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    DataEnvioTransporte oDataEnvioTransporteE = new DataEnvioTransporte();
+    EliminarDataTransporte oTransporteE = new EliminarDataTransporte();
+    public string UrlE = "/parqueadero/EliminarTransporte/";
+    private async Task BorrarE()
+    {
+        try
+        {
+            var response = await Http.DeleteAsync(UrlE + oDataEnvioTransporteE.Placa);
+            oTransporteE = response.Content.ReadFromJsonAsync<EliminarDataTransporte>().Result;
+            NavigationManager.NavigateTo("/Datos");
+            Refresh();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+
+    }
+}
+
+
+
