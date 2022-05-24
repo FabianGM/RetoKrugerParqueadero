@@ -16,3 +16,31 @@
 
 -SQLITE
 
+## Técnologias Utilizadas en la Carpeta - BackEndConSwagger
+-NET 6.0
+
+
+-INYECCIÓN DE DEPENDENCIAS
+
+
+-Swagger
+
+
+-OAuth2.0
+
+
+-JWT
+
+## Pruebas de Funcionamiento Carpeta - ParqueaderoFrontEnd
+
+### HOME
+<img src="/ImagenesReadme/home.png" alt=""/>
+### LOGIN
+<img src="/ImagenesReadme/Login.png" alt=""/>
+### REGISTRO
+<img src="/ImagenesReadme/Registro.png" alt=""/>
+### DATOS PARQUEADERO
+<img src="/ImagenesReadme/DatosParqueadero.png" alt=""/>
+### CRUD APP PARQUEADERO
+<img src="/ImagenesReadme/CRUD.png" alt=""/>
+
