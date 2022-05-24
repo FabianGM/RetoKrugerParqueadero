@@ -1,3 +1,7 @@
+# Reto Kruger Parqueadero - Ing. Fabián Garrido
+
+
+
 ## DIAGRAMA
 <img src="/ImagenesReadme/diagram.png" alt=""/>
 
@@ -28,7 +32,7 @@ https://youtu.be/7llGOighVjM
 #### Vídeo del Funciomiento de la APP DEMO CON OAUTH2.0, JWT Y SWAGGER
 https://youtu.be/ofYcOXmYyr0
 
-# Reto Kruger Parqueadero - Ing. Fabián Garrido
+
 
 ## Técnologias Utilizadas en la Carpeta - ParqueaderoFrontEnd
 
