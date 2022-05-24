@@ -73,15 +73,15 @@ https://youtu.be/ofYcOXmYyr0
 <img src="/ImagenesReadme/DatosParqueadero.png" alt=""/>
 **CRUD APP PARQUEADERO**
 <img src="/ImagenesReadme/CRUD.png" alt=""/>
-**__Swagger Registro__**
+**__SWAGGER REGISTRO__**
 <img src="/ImagenesReadme/RegisterSwagger.png" alt=""/>
 <img src="/ImagenesReadme/RegsiterSwggerJWT.png" alt=""/>
-**__Swagger Login__**
+**__SWAGGER LOGIN__**
 <img src="/ImagenesReadme/LoginSwggerJWT.png" alt=""/>
 <img src="/ImagenesReadme/LoginSwggerJWTEncript.png" alt=""/>
 
 
-**__Documentación API en Postman__**
+**__DOCUMENTACIÓN API EN POSTMAN__**
 
 
 https://documenter.getpostman.com/view/16889890/UyxqCNtV
