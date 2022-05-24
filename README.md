@@ -1,5 +1,7 @@
 ## DIAGRAMA
 <img src="/ImagenesReadme/diagram.png" alt=""/>
+
+
 **Instrucciones de Funcionamiento**
 <img src="/ImagenesReadme/Verde.png" alt=""/>
 
