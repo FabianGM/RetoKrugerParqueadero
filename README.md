@@ -1,3 +1,5 @@
+## DIAGRAMA
+<img src="/ImagenesReadme/diagram.png" alt=""/>
 #### Instrucciones de Funcionamiento
 <img src="/ImagenesReadme/Verde.png" alt=""/>
 
@@ -14,7 +16,7 @@
 
 
 #### Vídeo con las Instrucciones de Ejecuión
-https://youtu.be/EuxQ02dJs1o
+https://youtu.be/ry4z24YvvyQ
 
 #### Vídeo del Funciomiento de la APP DEMO COMPLETA
 https://youtu.be/7llGOighVjM
