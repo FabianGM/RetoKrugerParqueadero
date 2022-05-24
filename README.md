@@ -63,23 +63,23 @@ https://youtu.be/ofYcOXmYyr0
 -JWT
 
 ## Pruebas de Funcionamiento Carpeta - ParqueaderoFrontEnd
-#### HOME
+## HOME
 <img src="/ImagenesReadme/home.png" alt=""/>
-#### LOGIN
+## LOGIN
 <img src="/ImagenesReadme/Login.png" alt=""/>
-#### REGISTRO
+## REGISTRO
 <img src="/ImagenesReadme/Registro.png" alt=""/>
-#### DATOS PARQUEADERO
+## DATOS PARQUEADERO
 <img src="/ImagenesReadme/DatosParqueadero.png" alt=""/>
-#### CRUD APP PARQUEADERO
+## CRUD APP PARQUEADERO
 <img src="/ImagenesReadme/CRUD.png" alt=""/>
-#### Swagger Registro
+## Swagger Registro
 <img src="/ImagenesReadme/RegisterSwagger.png" alt=""/>
 <img src="/ImagenesReadme/RegsiterSwggerJWT.png" alt=""/>
-#### Swagger Login
+## Swagger Login
 <img src="/ImagenesReadme/LoginSwggerJWT.png" alt=""/>
 <img src="/ImagenesReadme/LoginSwggerJWTEncript.png" alt=""/>
-#### Documentación API en Postman
+## Documentación API en Postman
 https://documenter.getpostman.com/view/16889890/UyxqCNtV
 A su vez en el proyecto raíz se ecnuentra un pdf con la dodumentación
 
