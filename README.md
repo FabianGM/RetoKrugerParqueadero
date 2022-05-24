@@ -2,6 +2,8 @@
 <img src="/ImagenesReadme/Verde.png" alt=""/>
 
 **SE DEBE DAR CLIC Y ESCOGER EL NOMBRE DEL PROYECTO EN EL BOTON VERDE Y DE AHÍ EJECUTAR **
+
+
 **SE DEBE EJECUTAR PRIMERO LA CARPETA ParqueaderoBackEnd  y luego la carpeta ParqueaderoFrontEnd**
 **LA CARPETA BackEndConSwagger es independiente es un plus al reto kruger donde muestro la seguridad oauth2 y JWT**
 
