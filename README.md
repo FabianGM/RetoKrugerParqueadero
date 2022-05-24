@@ -65,17 +65,30 @@ https://youtu.be/ofYcOXmYyr0
 ## Pruebas de Funcionamiento Carpeta - ParqueaderoFrontEnd
 **__HOME__**
 <img src="/ImagenesReadme/home.PNG" alt=""/>
+
+
 **__LOGIN__**
 <img src="/ImagenesReadme/Login.png" alt=""/>
+
+
 **__REGISTRO__**
 <img src="/ImagenesReadme/Registro.png" alt=""/>
+
+
 **__DATOS PARQUEADERO__**
 <img src="/ImagenesReadme/DatosParqueadero.png" alt=""/>
+
+
 **CRUD APP PARQUEADERO**
 <img src="/ImagenesReadme/CRUD.png" alt=""/>
+
+
+
 **__SWAGGER REGISTRO__**
 <img src="/ImagenesReadme/RegisterSwagger.png" alt=""/>
 <img src="/ImagenesReadme/RegsiterSwggerJWT.png" alt=""/>
+
+
 **__SWAGGER LOGIN__**
 <img src="/ImagenesReadme/LoginSwggerJWT.png" alt=""/>
 <img src="/ImagenesReadme/LoginSwggerJWTEncript.png" alt=""/>
