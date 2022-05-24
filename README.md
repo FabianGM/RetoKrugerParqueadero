@@ -1,6 +1,6 @@
 ## DIAGRAMA
 <img src="/ImagenesReadme/diagram.png" alt=""/>
-#### Instrucciones de Funcionamiento
+**Instrucciones de Funcionamiento**
 <img src="/ImagenesReadme/Verde.png" alt=""/>
 
 **SE DEBE DAR CLIC Y ESCOGER EL NOMBRE DEL PROYECTO EN EL BOTON VERDE Y DE AHÍ EJECUTAR**
