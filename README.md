@@ -64,7 +64,7 @@ https://youtu.be/ofYcOXmYyr0
 
 ## Pruebas de Funcionamiento Carpeta - ParqueaderoFrontEnd
 ## HOME
-<img src="/ImagenesReadme/home.png" alt=""/>
+<img src="/ImagenesReadme/home.PNG" alt=""/>
 ## LOGIN
 <img src="/ImagenesReadme/Login.png" alt=""/>
 ## REGISTRO
