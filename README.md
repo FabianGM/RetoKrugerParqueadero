@@ -1,7 +1,14 @@
+## DIAGRAMA
+<img src="/ImagenesReadme/diagram.png" alt=""/>
 #### Instrucciones de Funcionamiento
 <img src="/ImagenesReadme/Verde.png" alt=""/>
 
 **SE DEBE DAR CLIC Y ESCOGER EL NOMBRE DEL PROYECTO EN EL BOTON VERDE Y DE AHÍ EJECUTAR**
+
+
+
+**IMPORTANTE:ABRIR EN TRES VISUAL STUDIO 2019 DIFERENTES**
+
 
 
 **SE DEBE EJECUTAR PRIMERO LA CARPETA ParqueaderoBackEnd  y luego la carpeta ParqueaderoFrontEnd**
@@ -9,7 +16,7 @@
 
 
 #### Vídeo con las Instrucciones de Ejecuión
-https://youtu.be/EuxQ02dJs1o
+https://youtu.be/ry4z24YvvyQ
 
 #### Vídeo del Funciomiento de la APP DEMO COMPLETA
 https://youtu.be/7llGOighVjM
@@ -63,23 +70,40 @@ https://youtu.be/ofYcOXmYyr0
 -JWT
 
 ## Pruebas de Funcionamiento Carpeta - ParqueaderoFrontEnd
-#### HOME
-<img src="/ImagenesReadme/home.png" alt=""/>
-#### LOGIN
+**__HOME__**
+<img src="/ImagenesReadme/home.PNG" alt=""/>
+
+
+**__LOGIN__**
 <img src="/ImagenesReadme/Login.png" alt=""/>
-#### REGISTRO
+
+
+**__REGISTRO__**
 <img src="/ImagenesReadme/Registro.png" alt=""/>
-#### DATOS PARQUEADERO
+
+
+**__DATOS PARQUEADERO__**
 <img src="/ImagenesReadme/DatosParqueadero.png" alt=""/>
-#### CRUD APP PARQUEADERO
+
+
+**CRUD APP PARQUEADERO**
 <img src="/ImagenesReadme/CRUD.png" alt=""/>
-#### Swagger Registro
+
+
+
+**__SWAGGER REGISTRO__**
 <img src="/ImagenesReadme/RegisterSwagger.png" alt=""/>
 <img src="/ImagenesReadme/RegsiterSwggerJWT.png" alt=""/>
-#### Swagger Login
+
+
+**__SWAGGER LOGIN__**
 <img src="/ImagenesReadme/LoginSwggerJWT.png" alt=""/>
 <img src="/ImagenesReadme/LoginSwggerJWTEncript.png" alt=""/>
-#### Documentación API en Postman
+
+
+**__DOCUMENTACIÓN API EN POSTMAN__**
+
+
 https://documenter.getpostman.com/view/16889890/UyxqCNtV
 A su vez en el proyecto raíz se ecnuentra un pdf con la dodumentación
 
