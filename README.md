@@ -41,6 +41,7 @@ https://youtu.be/ofYcOXmYyr0
 
 -Visual Studio 2019
 
+-C# 8.0
 
 -NET 3.1
 
